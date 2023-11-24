@@ -22,7 +22,7 @@ class Square:
             size (int): Size of the squre
         """
         try:
-            self.__size = size
+            self.__size = int(size)
             if int(size) < 0:
                 raise ValueError("size must be >= 0")
         except (TypeError):
