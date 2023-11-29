@@ -33,3 +33,9 @@ try:
 except Exception as e:
     print(e)
 
+try:
+    my_square_4 = Square(3.5)
+    print(type(my_square_4))
+    print(my_square_4.__dict__)
+except Exception as e:
+    print(e)
