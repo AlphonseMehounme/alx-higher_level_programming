@@ -22,8 +22,8 @@ class Square:
             size (int): Size of the squre
         """
         try:
-            self.__size = int(size)
-            if int(size) < 0:
+            self.__size = size
+            if size < 0:
                 raise ValueError("size must be >= 0")
-        except (TypeError):
-            print("size must be an integer".format())
+        except TypeError:
+            raise TypeError("size must be an integer")
