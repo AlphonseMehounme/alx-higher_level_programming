@@ -12,17 +12,36 @@ class Square:
     This is the square class
 
     """
-    def __init__(self, size=0):
-        """Init function
+    def __init__(self, value):
+        """init function
 
-        This is Square init function
-        It intanciate the class
+        Init function to instanciate
 
         Args:
-            size (int): Size of the squre
+
+        value - size value
+
+        """
+        self.sizeset(value)
+
+    @property
+    def sizeget(self):
+        """size function
+
+        Size function to retrieve the size
+
+        """
+        return self.__size
+
+    @size.setter
+    def sizeset(self, value):
+        """size function
+
+        Size function to get the size
+
         """
         try:
-            self.__size = size
+            self.__size = value
             if size < 0:
                 raise ValueError("size must be >= 0")
         except TypeError:
