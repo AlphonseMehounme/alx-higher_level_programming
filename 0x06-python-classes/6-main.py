@@ -16,3 +16,5 @@ my_square_3.my_print()
 
 print("--")
 
+my_square_4 = Square()
+my_square_4.my_print()
