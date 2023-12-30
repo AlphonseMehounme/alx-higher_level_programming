@@ -69,15 +69,15 @@ class Square:
         """
         try:
             self.__position = value
-            if len(value) != 2:
+            if len(value) != 2 or (value[0] < 0 or value[1] < 0):
                 raise TypeError("position must be a tuple of 2"
                                 " positive integers")
         except TypeError:
             raise TypeError("position must be a tuple of 2 positive integers")
-        else:
+        """else:
             if value[0] < 0 or value[1] < 0:
                 raise TypeError("position must be a tuple of 2 positive"
-                                " integers")
+                                " integers")"""
 
     def area(self):
         """Area function
