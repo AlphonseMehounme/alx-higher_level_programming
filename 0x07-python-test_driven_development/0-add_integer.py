@@ -3,14 +3,17 @@
     Add integer module
     This is add integer module
     Add integer function implemented
-
->>> add_integer(3, 7)
-10
 """
+
 import math
 def add_integer(a, b=98):
     """
         Add integer function
+
+        >>> add_integer(4, 6)
+        10
+        >>> add_integer(10, 0)
+        10
     """
     try:
         a = math.floor(a)
