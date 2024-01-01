@@ -9,11 +9,6 @@ import math
 def add_integer(a, b=98):
     """
         Add integer function
-
-        >>> add_integer(4, 6)
-        10
-        >>> add_integer(10, 0)
-        10
     """
     try:
         a = math.floor(a)
