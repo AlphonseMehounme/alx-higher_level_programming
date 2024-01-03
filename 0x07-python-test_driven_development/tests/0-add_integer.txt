@@ -3,3 +3,5 @@
 10
 >>> add_integer(10, 0)
 10
+>>> add_integer(5,)
+
