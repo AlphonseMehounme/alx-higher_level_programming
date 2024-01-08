@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
     Rectangle Module
+
+    To represente a rectangle
 """
 
 
@@ -92,4 +94,4 @@ class Rectangle:
             repr function
         """
         return "Rectangle(" + str(self.__width) + ", " +
-        str(self.__height) + ")"
+            str(self.__height) + ")"
