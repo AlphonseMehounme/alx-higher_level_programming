@@ -93,5 +93,5 @@ class Rectangle:
         """
             repr function
         """
-        return "Rectangle(" + str(self.__width) + ", "
-        + str(self.__height) + ")"
+        rp = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        return rp
