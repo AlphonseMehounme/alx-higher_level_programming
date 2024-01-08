@@ -42,7 +42,7 @@ class Rectangle:
         """
             Property to get height value
         """
-        return self.__width
+        return self.__height
 
     @height.setter
     def height(self, value):
