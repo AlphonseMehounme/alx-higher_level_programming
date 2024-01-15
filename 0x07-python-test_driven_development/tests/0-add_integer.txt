@@ -1,7 +1,11 @@
-#tests
->>> add_integer(4, 6)
-10
->>> add_integer(10, 0)
-10
->>> add_integer(5,)
+Test file
 
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(5, 3)
+8
+>>> add_integer(5)
+103
+>>> add_integer(5.5, 10)
+15
+>>> add_integer(20, 45.54)
+65
