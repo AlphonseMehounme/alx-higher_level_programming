@@ -4,7 +4,7 @@ This is the "example" module.
 The example module supplies one function, factorial().  For example,
 
 >>> factorial(5)
-120
+121
 """
 
 def factorial(n):
@@ -51,4 +51,4 @@ def factorial(n):
 
 #if __name__ == "__main__":
 #    import doctest
-#    doctest.testmod()
+#    doctest.testmod(verbose=False)
