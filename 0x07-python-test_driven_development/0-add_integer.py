@@ -5,6 +5,7 @@
     Add integer function implemented
 """
 
+
 def add_integer(a, b=98):
     """
         Add integer function
