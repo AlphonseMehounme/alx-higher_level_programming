@@ -5,9 +5,6 @@
     Add integer function implemented
 """
 
-import math
-
-
 def add_integer(a, b=98):
     """
         Add integer function
@@ -16,6 +13,6 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    a = math.floor(a)
-    b = math.floor(b)
+    a = int(a)
+    b = int(b)
     return a + b
