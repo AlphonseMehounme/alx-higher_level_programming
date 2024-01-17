@@ -1,0 +1,7 @@
+# doctest_in_help.txt
+
+>>> from doctest_simple import function
+>>> function(2, 3)
+6
+>>> function(2.0, 3)
+6.0
