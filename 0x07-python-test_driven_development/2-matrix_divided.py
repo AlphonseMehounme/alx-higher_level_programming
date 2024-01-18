@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
 
        Function that divise matrix
 
-       Args: 
+       Args:
          @matrix : Matrix to divise
          @div : Matrix to divise by
 
@@ -17,15 +17,18 @@ def matrix_divided(matrix, div):
          Return the matrix divided
     """
     if type(matrix) != list:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    for l in matrix:
-        if type(l) != list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists) of"
+              "integers/floats")
+    for m in matrix:
+        if type(m) != list:
+            raise TypeError("matrix must be a matrix (list of lists) of"
+                  "integers/floats")
         for i in l:
             if type(i) not in [int, float]:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of"
+                      "integers/floats")
         size = len(matrix[0])
-        if len(l) != size:
+        if len(m) != size:
             raise TypeError("Each row of the matrix must have the same size")
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
