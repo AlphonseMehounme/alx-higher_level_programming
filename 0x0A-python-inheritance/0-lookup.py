@@ -6,10 +6,10 @@
 
 def lookup(obj):
     """
-      lookup function : 
+      lookup function :
       find the availavle attr and methods of obj
 
-      Args: 
+      Args:
         obj : Object to look attr and methods available for
 
       Return:
