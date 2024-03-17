@@ -15,16 +15,20 @@ class Rectangle(Base):
         """
         super().__init__(id)
         allarg = ['width', 'height', 'x', 'y']
-        i = 0
-        for val in [width, height, x, y]:
-            if type(val) != int:
-                raise TypeError(f"{val} must be an integer")
-        for val2 in [width, height]:
-            if val2 <= 0:
-                raise ValueError(f"{val2} must be > 0")
-        for val3 in [x, y]:
-            if val3 < 0:
-                raise ValueError(f"{val3} must be >= 0")
+        allargval = [width, height, x, y]
+        for n in range(len(allarg)):
+            if type(allargval[n]) != int:
+                raise TypeError(f"{allarg[n]} must be an integer")
+        allarg1 = ['width', 'height']
+        allargval1 = [width, height]
+        for m in range(len(allarg1)):
+            if allargval1[m] <= 0:
+                raise ValueError(f"{allarg1[m]} must be > 0")
+        allarg2 = ['x', 'y']
+        allargval2 = [x, y]
+        for j in range(len(allarg2)):
+            if allargval2[j] < 0:
+                raise ValueError(f"{allarg2[j]} must be >= 0")
         self.__width = width
         self.__height = height
         self.__x = x
