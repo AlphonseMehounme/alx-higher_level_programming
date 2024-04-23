@@ -2,7 +2,7 @@
 
 const { argv } = require('node:process');
 
-function factorial(a) {
+function factorial (a) {
   if (a === 0) {
     return 1;
   } else {
