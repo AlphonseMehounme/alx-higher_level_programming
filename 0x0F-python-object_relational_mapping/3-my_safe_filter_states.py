@@ -15,8 +15,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost",
                          user=username, passwd=passwd, db=dtbase)
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id"
-                .format(cityname))
+    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY id", (cityname,))
     states = cur.fetchall()
 
     for state in states:
