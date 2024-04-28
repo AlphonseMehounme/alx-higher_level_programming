@@ -14,7 +14,7 @@ if __name__ == "__main__":
                          passwd=passwd, db=dtbase, port=3306)
     cur = db.cursor()
 
-    cur.execute('SELECT * FROM states WHERE name LIKE "N%" ORDER BY id')
+    cur.execute('SELECT * FROM states WHERE name LIKE "N%" ORDER BY id ASC')
     states = cur.fetchall()
 
     for state in states:
