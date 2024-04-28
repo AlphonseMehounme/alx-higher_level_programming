@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-  State with N starting
+  Select States Module
 """
 import MySQLdb
 import sys
@@ -11,10 +11,10 @@ if __name__ == "__main__":
     passwd = sys.argv[2]
     dtbase = sys.argv[3]
 
-    db = MySQLdb.connect(host="localhost", user=username,
-                         passwd=passwd, db=dtbase)
+    db = MySQLdb.connect(host="localhost",
+                         user=username, passwd=passwd, db=dtbase)
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE \"N%\" ORDER BY id")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
     states = cur.fetchall()
 
     for state in states:
