@@ -1,3 +1,3 @@
 #!/bin/bash
 # Print Request body
-curl -s "$1"
+if [ $(curl -s -w "%{http_code}" "$1")
