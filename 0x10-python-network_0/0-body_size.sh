@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 # Request size
-curl $1
+echo $(curl -w "%{size_download}" $1)
