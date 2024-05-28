@@ -1,3 +1,3 @@
 #!/bin/bash
-# Print Request body size
-echo $(curl -s -o "%{stdout}" "$1")
+# Print Request body
+curl -s "$1"
