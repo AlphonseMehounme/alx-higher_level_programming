@@ -1,3 +1,3 @@
 #!/bin/bash
 # Print server Allow methods
-curl -s -X OPTIONS "$1"
+curl -s --request-target "*" -X OPTIONS "$1"
