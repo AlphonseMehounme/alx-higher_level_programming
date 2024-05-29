@@ -1,3 +1,3 @@
 #!/bin/bash
-# Print Request body
+# Send DELETE request
 curl -s -X DELETE "$1"
