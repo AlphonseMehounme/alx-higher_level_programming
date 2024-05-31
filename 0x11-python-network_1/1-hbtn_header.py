@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Send request to provided URL"""
+#"""Send request to provided URL"""
 import sys
 import urllib.request
 
