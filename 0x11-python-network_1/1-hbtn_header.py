@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
   Send request to provided url
+  Get URL from commmand Line 
+  And print the value of X-Request-ID
 """
 import urllib.request
 import sys
@@ -13,7 +15,3 @@ with urllib.request.urlopen(req) as response:
     for header in headers:
         if header[0] == 'X-Request-Id':
             print(header[1])
-    #print("Body response:")
-    #print(f"\t- type: {type(response_bytes)}")
-    #print(f"\t- content: {response_bytes}")
-    #print(f"\t- utf8 content: {response_bytes.decode('utf-8')}")
