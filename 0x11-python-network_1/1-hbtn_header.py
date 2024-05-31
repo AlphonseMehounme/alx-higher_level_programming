@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-#"""Send request to provided URL"""
-import sys
+"""
+  Send request
+"""
 import urllib.request
 
 
-url = sys.argv[1]
-req = urllib.request.Request(url)
+req = urllib.request.Request("https://alx-intranet.hbtn.io/status")
 with urllib.request.urlopen(req) as response:
-    headers = response.getheaders()
-    for header in headers:
-        if header[0] == 'X-Request-Id':
-            print(header[1])
+    response_bytes = response.read()
+    print("Body response:")
+    print(f"\t- type: {type(response_bytes)}")
+    print(f"\t- content: {response_bytes}")
+    print(f"\t- utf8 content: {response_bytes.decode('utf-8')}")
