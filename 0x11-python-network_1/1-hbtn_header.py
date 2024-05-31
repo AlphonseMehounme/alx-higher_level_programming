@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-  Send request to provided url
-  Get URL from commmand Line 
-  And print the value of X-Request-ID
+  This module Send request to provided url from commmand Line and print the
+  value of X-Request-ID header to output
 """
 import urllib.request
 import sys
