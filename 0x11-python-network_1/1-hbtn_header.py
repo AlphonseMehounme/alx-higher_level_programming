@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 """
-  This module Send request to provided url from commmand Line and print the
-  value of X-Request-ID header to output
+This module Send request to provided url from commmand Line and print the
+value of X-Request-ID header to standard output
+Usage : ./1-hbtn_header.py https://alx-intranet.hbtn.io
 """
 import urllib.request
 import sys
 
 
-if '__name__': '__main__':
+if '__name__' == '__main__':
     """
-      Main section
+      Main section that uses the provided URL to send request and print value
+      of X-Request-ID header to ouptut
     """
     url = sys.argv[1]
     req = urllib.request.Request(url)
