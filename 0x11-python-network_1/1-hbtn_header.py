@@ -8,7 +8,7 @@ import urllib.request
 import sys
 
 
-if '__name__' == '__main__':
+if __name__ == "__main__":
     """
       Main section that uses the provided URL to send request and print value
       of X-Request-ID header to ouptut
