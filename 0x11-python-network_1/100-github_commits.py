@@ -14,7 +14,8 @@ if __name__ == "__main__":
             "Authorization": "Bearer",
             "X-GitHub-Api-Version": "2022-11-28"
           }
-    com = requests.get(url, headers)
-    for i in range(10):
-        print(f"{com.json()[i]['sha']}: " +
-              f"{com.json()[i]['commit']['author']['name']}")
+    coms = requests.get(url, headers).json()
+    i = 0
+    for com in coms:
+        if i < 10:
+            print(f"{com['sha']}: {com['commit']['author']['name']}")
