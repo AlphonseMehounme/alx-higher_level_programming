@@ -19,3 +19,4 @@ if __name__ == "__main__":
     for com in coms:
         if i < 10:
             print(f"{com['sha']}: {com['commit']['author']['name']}")
+        i = i + 1
