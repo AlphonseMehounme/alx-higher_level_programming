@@ -8,7 +8,7 @@ import requests
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/user" #+ sys.argv[1]
+    url = "https://api.github.com/user"
     headers = {
             "Accept": "application/vnd.github+json",
             "Authorization": "Bearer " + sys.argv[2],
