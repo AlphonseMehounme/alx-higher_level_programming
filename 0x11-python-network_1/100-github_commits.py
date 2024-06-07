@@ -16,5 +16,5 @@ if __name__ == "__main__":
           }
     com = requests.get(url, headers)
     for i in range(10):
-        print(f"{com.json()[i]['sha']}:\
-              {com.json()[i]['commit']['author']['name']}")
+        print(f"{com.json()[i]['sha']}: " +
+              f"{com.json()[i]['commit']['author']['name']}")
